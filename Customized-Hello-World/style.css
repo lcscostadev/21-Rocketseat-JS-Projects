@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    color: white;
+}
+
+h1 {
+    font-size: 6rem;
+    border-radius: 10px;
+    padding: 50px;
+    cursor: pointer;
+}
+
+/* Basic blinking */
+
+.typing-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-cursor {
+    display: inline-block;
+    width: 2px;
+    background: white;
+    height: 100px;
+    margin-left: 2px;
+    animation: blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
