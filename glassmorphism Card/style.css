@@ -27,6 +27,17 @@ a:hover {
     color: rgb(75, 75, 187);
 }
 
+.eye {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.eye-icon {
+    font-size: 20px;
+    color: rgb(93, 93, 239);
+}
+
 /* Glassmorphism card effect */
 .card {
     backdrop-filter: blur(16px) saturate(180%);
